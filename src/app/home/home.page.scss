@@ -1,0 +1,25 @@
+ion-header{
+  ion-toolbar {
+    --min-height: 50px;
+    ion-title {
+      img {
+        width: 100px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+ion-slides{
+  ion-slide{
+    h2{
+    top: 60%;
+    transform: translateY(-50%);
+    margin: 0px 0px 0px 0px;
+    }
+  }
+  
+}
+
+

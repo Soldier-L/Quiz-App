@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pergunta {{numero + 1}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  <div id="container">
+    <div id="perguntas">
+      {{pergunta}}
+    </div>
+  
+  <div id="respostas">
+    <ion-list>
+    <ion-radio-group>
+      <ion-item lines="full" (click)="pegarResposta(1)">
+      <ion-label>{{opcao1}}</ion-label>
+      <ion-radio slot="end" value="op1" color="danger"></ion-radio>
+    </ion-item>
+      <ion-item lines="full" (click)="pegarResposta(2)">
+      <ion-label>{{opcao2}}</ion-label>
+      <ion-radio slot="end" value="op2" color="danger"></ion-radio>
+    </ion-item>
+      <ion-item lines="full" (click)="pegarResposta(3)">
+      <ion-label>{{opcao3}}</ion-label>
+      <ion-radio slot="end" value="op3" color="danger"></ion-radio>
+    </ion-item>
+      <ion-item lines="full" (click)="pegarResposta(4)">
+      <ion-label>{{opcao4}}</ion-label>
+      <ion-radio slot="end" value="op4" color="danger"></ion-radio>
+    </ion-item>
+      <ion-item lines="full" (click)="pegarResposta(5)">
+      <ion-label>{{opcao5}}</ion-label>
+      <ion-radio slot="end" value="op5" color="danger"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  </ion-list>
+  </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="block" color="dark" (click)="inicio()">Início</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="block" color="dark" (click)="proximo()">Próximo</ion-button> 
+    </ion-col>
+  </ion-row>
+</ion-footer>

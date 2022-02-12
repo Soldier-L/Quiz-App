@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Resultado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-grid>
+    <ion-row>
+    <ion-col>
+      <b>Acertos</b>
+    </ion-col>
+    <ion-col>
+      <b>Erros</b>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+      {{recebeCerto}}
+    </ion-col>
+    <ion-col>
+      {{recebeErrado}}
+    </ion-col>
+    </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      
+      <ion-row>
+      <ion-col>
+        <b>Resposta das perguntas</b>
+      </ion-col>
+      </ion-row>
+      
+      <ion-row>
+      <ion-col>
+        <b>1ª Pergunta:</b> Tom Jobim 
+      </ion-col>
+      </ion-row>
+      
+      <ion-row>
+      <ion-col>
+        <b>2ª Pergunta:</b> Metal Contra As Nuvens 
+      </ion-col>
+      </ion-row>
+      
+      <ion-row>
+      <ion-col>
+        <b>3ª Pergunta:</b> Martin McFly
+      </ion-col>
+      </ion-row>
+      
+      <ion-row>
+      <ion-col>
+        <b>4ª Pergunta:</b> Red Hot Chilli Peppers
+      </ion-col>
+      </ion-row>
+      
+      <ion-row>
+      <ion-col>
+        <b>5ª Pergunta:</b> Ordem e Progresso
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+        <b>6ª Pergunta:</b> CJ acaba com o Oficial Tempeny
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+        <b>7ª Pergunta:</b> Espanha
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+        <b>8ª Pergunta:</b> Master Cheif
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+        <b>9ª Pergunta:</b> 3
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col>
+        <b>10ª Pergunta:</b> Playstation 4
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-button color="dark" expand = "block" (click)="voltaInicio()">Inicio</ion-button>
+  </div>
+  
+</ion-content>

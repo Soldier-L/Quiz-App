@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      <img src="assets/minimalista.png" alt="">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+
+  <ion-chip>
+    <ion-avatar>
+      <img src="assets/cj.png">
+    </ion-avatar>
+    <ion-label>Usuário</ion-label>
+  </ion-chip>
+
+  <div id="container">
+    <ion-button size="large" expand="block" color="light" fill="outline" (click)="abrirTela('pergunta')">Iniciar</ion-button>
+    <ion-button size="large" expand="block" color="light" fill="outline" (click)="abrirTela('instrucao')">Instruções</ion-button>
+    <ion-button size="large" expand="block" color="light" fill="outline" (click)="abrirTela('sobre')">Sobre</ion-button>
+    </div>
+
+</ion-content>
